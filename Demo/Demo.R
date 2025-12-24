@@ -1,5 +1,5 @@
 # ==============================================================================
-# Run Baydubig Pipeline on demo_data.rds (10x10 Grid, 100 Genes Example)
+# Run Baydubig Pipeline on demo_data.rds (20x20 Grid, 100 Genes Example)
 # ==============================================================================
 
 
@@ -20,7 +20,7 @@ results <- run_baydubig(
   sigma = demo_data$simulation_params$sigma,
   k = demo_data$simulation_params$k,
   mcmc_iter = 1000,
-  mcmc_burn = 50,
+  mcmc_burn = 500,
   target_bfdr = 0.05,
   c_candidates = seq(0.05, 0.9, by = 0.05),
   svg_indices = demo_data$svg_indices
