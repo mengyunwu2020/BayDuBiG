@@ -5,7 +5,7 @@ BayDuBiG is a **Bayesian hierarchical model** (inspired by the Durbin model) des
 
 ## Repository Structure
 ```
-BayDuBiG/
+BaydubiG/
 ├── R/
 │   ├── BayDuBiG.R          # R wrapper (preprocessing + pipeline + BFDR control)
 │   └── RcppExports.R       # Auto-generated Rcpp bindings (do not edit)
@@ -13,12 +13,12 @@ BayDuBiG/
 │   ├── Baydubig_mcmc.cpp   # Core C++ implementation (MCMC sampling)
 │   ├── CMakeLists.txt      # Build configuration
 │   └── RcppExports.cpp     # Auto-generated C++ bindings (do not edit)
-├── Demo/
+
+Demo/
 │   ├── Demo.R              # Example workflow (run this to test)
 │   └── demo_data.rds       # Example dataset (100 genes × 400 cells, 20x20 grid)
-├── DESCRIPTION             # Package metadata (for R package build)
-├── NAMESPACE               # Package namespace (for R package build)
-└── README.md               # This document
+             
+README.md               # This document
 ```
 
 
