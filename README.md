@@ -1,4 +1,4 @@
-# BayDuBiG: Bayesian Double Bayesian Inference for Spatial Variable Genes (SVGs)
+# BayDuBiG: Bayesian Dubin-based Bi-level framework for identifying SV Genes
 
 BayDuBiG is a **Bayesian hierarchical model** (inspired by the Durbin model) designed to identify **Spatially Variable Genes (SVGs)** from spatial transcriptomics data. It uses a **bi-level (group-gene) inference framework** combined with MCMC sampling (implemented in C++ for efficiency) to detect genes with non-random spatial expression patterns.
 
