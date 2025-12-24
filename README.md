@@ -5,20 +5,20 @@ BayDuBiG is a **Bayesian hierarchical model** (inspired by the Durbin model) des
 
 ## Repository Structure
 ```
-BaydubiG/
-├── R/
-│   ├── BayDuBiG.R          # R wrapper (preprocessing + pipeline + BFDR control)
-│   └── RcppExports.R       # Auto-generated Rcpp bindings (do not edit)
-├── src/
-│   ├── Baydubig_mcmc.cpp   # Core C++ implementation (MCMC sampling)
-│   ├── CMakeLists.txt      # Build configuration
-│   └── RcppExports.cpp     # Auto-generated C++ bindings (do not edit)
-
-Demo/
-│   ├── Demo.R              # Example workflow (run this to test)
-│   └── demo_data.rds       # Example dataset (100 genes × 400 cells, 20x20 grid)
-             
-README.md               # This document
+./
+├── BayDubig/                # Core code main directory
+│   ├── R/                   # R wrapper code (preprocessing, pipeline call, result parsing)
+│   │   ├── BayDuBiG.R       # Main pipeline function (run_baydubig)
+│   │   └── RcppExports.R    # Auto-generated Rcpp binding file (do not modify)
+│   ├── src/                 # C++ core code (MCMC sampling implementation)
+│   │   ├── Baydubig_mcmc.cpp # Core MCMC sampling logic (OpenMP parallel acceleration)
+│   │   └── RcppExports.cpp  # Auto-generated Rcpp binding file (do not modify)
+│   ├── NAMESPACE            # R package namespace definition (exports public functions)
+│   └── DESCRIPTION          # R package metadata (version, dependencies, author, etc.)
+├── Demo/                    # Demo directory (quick start)
+│   ├── Demo.R               # Example running script (complete call workflow)
+│   ├── demo_data.rds        # Example dataset (100 genes × 400 cells, 20×20 spatial grid)
+└── README.md                # Repository main documentation (this file)
 ```
 
 
