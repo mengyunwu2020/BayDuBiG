@@ -59,8 +59,8 @@ The `Demo/Demo.R` script runs the full pipeline on the example dataset (`demo_da
      X = demo_data$X,          # Raw covariate matrix
      sigma = 0.01,             # Gaussian weight bandwidth
      k = 8,                    # Number of nearest neighbors
-     mcmc_iter = 100,          # MCMC iterations
-     mcmc_burn = 50,           # Burn-in iterations
+     mcmc_iter = 1000,          # MCMC iterations
+     mcmc_burn = 500,           # Burn-in iterations
      target_bfdr = 0.05        # BFDR threshold for SVG selection
    )
    
