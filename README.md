@@ -9,7 +9,7 @@ jointly modeling spatial spillover effects and coordinated regulation within
 functional gene groups.
 
 This repository accompanies the paper *Bayesian Durbin-based bi-level
-identification of spatially variable genes* (Feng, Wang, and Wu).
+identification of spatially variable genes* .
 
 ## Model overview
 
