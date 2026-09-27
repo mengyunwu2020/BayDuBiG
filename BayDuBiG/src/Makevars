@@ -1,0 +1,20 @@
+# Makevars for BAYDUBIG
+#
+# OpenMP is an optional speed-up. By default the system compiler is used (it may
+# be Apple clang, which lacks -fopenmp), and the code automatically falls back to
+# a serial implementation with identical numerical results.
+#
+# To enable OpenMP (recommended: Homebrew gcc, e.g. gcc-14), uncomment the lines
+# below and adjust the paths to your installation:
+#
+#   CXX = /opt/homebrew/bin/g++-14
+#   CXX11 = /opt/homebrew/bin/g++-14
+#   CXX14 = /opt/homebrew/bin/g++-14
+#   CXX17 = /opt/homebrew/bin/g++-14
+#   CXX_STD = CXX17
+#   PKG_CXXFLAGS = -O3 -fopenmp
+#   PKG_LIBS = -fopenmp
+#
+# Default (serial, compatible with any compiler):
+CXX_STD = CXX17
+PKG_CXXFLAGS = -O3

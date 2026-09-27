@@ -1,0 +1,21 @@
+Package: BayDuBiG
+Type: Package
+Title: Bayesian Durbin-based Bi-level Identification of Spatially Variable Genes
+Version: 1.0.0
+Date: 2026-09-26
+Authors@R: person("Tianyi", "Wang", role = c("aut", "cre"), email = "your@email.com")
+Description: A Bayesian bi-level variable selection model for identifying
+    spatially variable genes (SVGs) in spatial transcriptomics.  The method
+    couples a spatial autoregressive (Durbin) term with a two-level spike-and-slab
+    prior: a group (pathway) level and a within-group (gene) level.  The group
+    effect follows a union semantics (a gene is flagged if at least one of its
+    member groups is selected), and false-discovery control is achieved via a
+    Bayesian false discovery rate (BFDR) rule.  The MCMC sampler is implemented in
+    C++ (RcppArmadillo) with optional OpenMP parallelism.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.11), Matrix
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.5.0)
+Suggests: testthat
+RoxygenNote: 7.3.1
