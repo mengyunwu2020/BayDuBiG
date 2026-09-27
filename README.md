@@ -124,22 +124,7 @@ set the number of threads before running the model:
 Sys.setenv(OMP_NUM_THREADS = 8)   # adjust to your CPU cores
 ```
 
-## Citation
 
-If this package is useful for your research, please cite the corresponding paper:
-
-> Feng, X., Wang, T., and Wu, M. *Bayesian Durbin-based bi-level identification
-> of spatially variable genes.* (add the journal, volume, and DOI when available)
-
-and the software:
-
-```bibtex
-@software{BayDuBiG,
-  title   = {BayDuBiG: Bayesian Durbin-based Bi-level Identification of Spatially Variable Genes},
-  author  = {Xingdong Feng and Tianyi Wang and Mengyun Wu},
-  url     = {https://github.com/mengyunwu2020/BayDuBiG}
-}
-```
 
 ## Authors
 
